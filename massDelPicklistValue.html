@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://test.salesforce.com/" />
+<title>delPicklistValue</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delPicklistValue</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>looptimes</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://na9.salesforce.com/p/setup/field/StandardFieldAttributes/d?id=Type&amp;type=Campaign&amp;retURL=%2Fp%2Fsetup%2Flayout%2FLayoutFieldList%3Ftype%3DCampaign%26retURL%3D%252Fui%252Fsetup%252FSetup%253Fsetupid%253DCampaign%26setupid%3DCampaignFields&amp;setupid=CampaignFields</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars.looptimes &lt;= 20</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Del</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScriptAndWait</td>
+	<td>var links = document.getElementsByTagName(&quot;a&quot;);&nbsp;&nbsp;&nbsp;/*Campaign.Type Field*/ var delArray = [&quot;Billboard&quot;, &quot;Biz Dev Partnership&quot;, &quot;BRC&quot;, &quot;Broadcast - Radio&quot;, &quot;Broadcast - Television&quot;, &quot;Charity&quot;, &quot;Company/Program Updates&quot;, &quot;Concert/Tour&quot;, &quot;Conference/Meeting&quot;, &quot;Direct Mail&quot;, &quot;EJM&quot;, &quot;Email&quot;, &quot;Europe&quot;, &quot;Event (Other)&quot;, &quot;FBO&quot;, &quot;Financial Partner&quot;, &quot;General&quot;, &quot;Influencer&quot;, &quot;Internal&quot;, &quot;Lifestyle Partner&quot;, &quot;List Research&quot;, &quot;Lunch/Dinner&quot;, &quot;Magazine&quot;, &quot;Movie/Theatre&quot;, &quot;Newsletter/eBulletin&quot;, &quot;Newspaper&quot;, &quot;NJ Employee&quot;, &quot;NJE Owner&quot;, &quot;NJUS Owner&quot;, &quot;Online&quot;, &quot;Online - Banner Ads&quot;, &quot;Owner Referral&quot;, &quot;Partner&quot;, &quot;Partnership&quot;, &quot;Phone&quot;, &quot;Poker Tournament&quot;, &quot;Postal&quot;, &quot;Print - BRC&quot;, &quot;Print - Magazine&quot;, &quot;Print - Newspaper&quot;, &quot;Promotion&quot;, &quot;Prospect&quot;, &quot;Radio&quot;, &quot;Referral&quot;, &quot;SC Reengagement&quot;, &quot;Search Engine&quot;, &quot;Sporting&quot;, &quot;Statics&quot;, &quot;Territory Introduction&quot;, &quot;TV&quot;, &quot;VP&quot;, &quot;Website&quot;]; /*Campaign.Category Field*/ /*var delArray = [&quot;Albany Bahamas&quot;, &quot;Anatomie&quot;, &quot;Angelo Caroli Lifestyle&quot;, &quot;A rare world&quot;, &quot;Architectural Digest&quot;, &quot;Art&quot;, &quot;Art's Vice&quot;, &quot;Art Dubai&quot;, &quot;Art Investor&quot;, &quot;ArtPassions&quot;, &quot;ArtWorks Jornal&quot;, &quot;Asian Wealth&quot;, &quot;Aspen Times&quot;, &quot;Austin Martin Magazine&quot;, &quot;Avis&quot;, &quot;Ayco&quot;, &quot;Barclays&quot;, &quot;Barron's&quot;, &quot;Bing&quot;, &quot;Black Card Magazine&quot;, &quot;Boating&quot;, &quot;Bold&quot;, &quot;BSL&quot;, &quot;Business Jet Traveler&quot;, &quot;Canyon Ranch&quot;, &quot;Charity&quot;, &quot;Chicago Tribune&quot;, &quot;Chief Executive&quot;, &quot;Cinco Dias&quot;, &quot;CITI&quot;, &quot;CITI Prestige&quot;, &quot;CNN Money.com&quot;, &quot;Columbus Dispatch&quot;, &quot;Concert&quot;, &quot;Conde Nast Traveler&quot;, &quot;Consejeros&quot;, &quot;Convergent&quot;, &quot;Cote Geneve&quot;, &quot;Crain's New York&quot;, &quot;Credit Suisse&quot;, &quot;Dallas Morning News&quot;, &quot;Departures&quot;, &quot;Die Welt&quot;, &quot;Die Welt Report&quot;, &quot;DuJour&quot;, &quot;EJM&quot;, &quot;Empire CLS&quot;, &quot;Events Attendance Driving&quot;, &quot;Executive Golfer&quot;, &quot;Executive Travel&quot;, &quot;FBO&quot;, &quot;Film&quot;, &quot;Financial Times&quot;, &quot;Flight Aware&quot;, &quot;Fonds Cash&quot;, &quot;Forbes&quot;, &quot;Forbes.com&quot;, &quot;Forbes Denmark&quot;, &quot;Forbes - EU&quot;, &quot;Forbes Finland&quot;, &quot;Forbes France&quot;, &quot;Forbes Germany&quot;, &quot;Forbes Italy&quot;, &quot;Forbes Life&quot;, &quot;Forbes Norway&quot;, &quot;Forbes Russia&quot;, &quot;Forbes Spain&quot;, &quot;Forbes Sweden&quot;, &quot;Forbes Switzerland&quot;, &quot;Forbes UK&quot;, &quot;Formula magazine&quot;, &quot;Fortune&quot;, &quot;Fortune.com&quot;, &quot;Fortune - EU&quot;, &quot;Four Seasons Magazine&quot;, &quot;FT.com&quot;, &quot;FT Commodities Summit - Sponsor&quot;, &quot;FT - Corporate Aviation Report&quot;, &quot;FT - Special Report&quot;, &quot;FT - Wealth report&quot;, &quot;FT - Weekend Magazine&quot;, &quot;FT - Yate report&quot;, &quot;Gastronomic&quot;, &quot;Global Geneva&quot;, &quot;Google&quot;, &quot;Handelsblatt&quot;, &quot;Handelsblatt.com&quot;, &quot;Il Sore 24 Ore&quot;, &quot;Industry&quot;, &quot;Inspiratio Magazine&quot;, &quot;Inspirato&quot;, &quot;Institutional Investor&quot;, &quot;Jackson Hole Four Seasons&quot;, &quot;JP Morgan&quot;, &quot;Kommersant&quot;, &quot;La Dolce Vita&quot;, &quot;Leading Hotels of the World&quot;, &quot;Lefigaro.fr&quot;, &quot;Les Echos&quot;, &quot;Les Echos Online&quot;, &quot;Les Echos - Serie Limite&quot;, &quot;Le Temps&quot;, &quot;Le Temps Online&quot;, &quot;Lifestyle&quot;, &quot;Lifestyles&quot;, &quot;Los Angeles Times&quot;, &quot;Luxos Germany&quot;, &quot;Luxos Spain&quot;, &quot;Luxos Switzerland&quot;, &quot;Mandarin Oriental&quot;, &quot;Merrill Lynch&quot;, &quot;Miami Herald&quot;, &quot;Monaco Business&quot;, &quot;Monaco Impresse&quot;, &quot;Montage BH&quot;, &quot;Montage DV&quot;, &quot;Montage LB&quot;, &quot;MSSB PWM&quot;, &quot;MSSB Reserved&quot;, &quot;Naples Daily&quot;, &quot;NetJets&quot;, &quot;Newsletter&quot;, &quot;New Yorker&quot;, &quot;New York Observer&quot;, &quot;New York Times&quot;, &quot;NewYorkTimes.com&quot;, &quot;Northern Trust&quot;, &quot;NZZ&quot;, &quot;Ocean Reef&quot;, &quot;Oil Review Middle East&quot;, &quot;Owner - Operational Updates&quot;, &quot;Palm Beach Post&quot;, &quot;PNC Hawthorn&quot;, &quot;Poker&quot;, &quot;Porta da Frente&quot;, &quot;Primland&quot;, &quot;Private Journey&quot;, &quot;ProkomREPORT&quot;, &quot;Quinta Properties&quot;, &quot;Rapport CIAN&quot;, &quot;RBC&quot;, &quot;Response Driving - Digital Visits&quot;, &quot;Response Driving - Sales Specific&quot;, &quot;Ritz Carlton Magazine&quot;, &quot;Robb Report&quot;, &quot;Rochay Elite Magazine&quot;, &quot;RUS Magazine&quot;, &quot;San Francisco Chronicle&quot;, &quot;Savoya&quot;, &quot;Sea Island&quot;, &quot;Sherpa Report&quot;, &quot;Skibo Castle&quot;, &quot;SLEEK&quot;, &quot;Sotheby's&quot;, &quot;Sporting - Equine&quot;, &quot;Sporting - Football&quot;, &quot;Sporting - Golf&quot;, &quot;Sporting - Tennis&quot;, &quot;St. George&quot;, &quot;Static&quot;, &quot;Strong Man&quot;, &quot;SW Magazine&quot;, &quot;Targeting (VMM)&quot;, &quot;The Elite Life&quot;, &quot;The Foxley Docket&quot;, &quot;The Luxury Collection&quot;, &quot;The Paddock magazine&quot;, &quot;The Times&quot;, &quot;Tiger 21/Magnolia&quot;, &quot;Tribune de Geneve&quot;, &quot;UBS&quot;, &quot;US Bank&quot;, &quot;Vail Resorts/Epic Ski Passes&quot;, &quot;Vedomosti&quot;, &quot;Vedomosti.ru&quot;, &quot;Villas &amp; Golfe&quot;, &quot;Wall Street Journal&quot;, &quot;WallStreetJournal.com&quot;, &quot;Wired&quot;, &quot;Worth&quot;, &quot;WSJ Money Magazine&quot;, &quot;Wynn&quot;, &quot;Yacht Premiere&quot;, &quot;Yahoo&quot;, &quot;Yodle&quot;];*/ /*var delArray= [&quot;Albany Bahamas&quot;];*/ /* Pick out the Del links. */&nbsp;&nbsp;&nbsp;var delLinks = new Array();&nbsp;&nbsp;for (var i = 0; i &lt; links.length; i++) {&nbsp;&nbsp;&nbsp;&nbsp;var link = links[i];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var title = link.title;&nbsp;&nbsp;&nbsp;&nbsp;var toDel = true;&nbsp;&nbsp;&nbsp;&nbsp;if (link.innerHTML == &quot;Del&quot;) { 	 for(var j=0; j&lt;delArray.length; j++){ 		if(title.indexOf(delArray[j]) &gt; -1){ 			delLinks[delLinks.length] = link; 			break; 		};&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 	} 	 	if(delLinks.length &gt; 0) 		break; } if(delLinks.length == 0){	 }else{&nbsp;&nbsp;&nbsp;&nbsp;/* Open each Del link to delete the associated&nbsp;&nbsp;&nbsp;&nbsp;picklist value.&nbsp;&nbsp;&nbsp;&nbsp;This code can be augmented as desired&nbsp;&nbsp;&nbsp;&nbsp;to only delete certain values.&nbsp;&nbsp;&nbsp;&nbsp;However, for custom picklists it's probably&nbsp;&nbsp;&nbsp;&nbsp;easier to just delete all of the values&nbsp;&nbsp;&nbsp;&nbsp;and then re-add the desired values. */&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (var i = 0; i &lt; delLinks.length; i++) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var delLink = delLinks[i];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var saveWin = window.open(delLink.attributes['href'].value, &quot;_self&quot;);&nbsp;&nbsp;&nbsp;&nbsp;} }</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#bottomButtonRow &gt; input[name=&quot;delID&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=p13</td>
+	<td>label=--None--</td>
+</tr>
+<tr>
+	<td>verifySelectedLabel</td>
+	<td>id=p13</td>
+	<td>--None--</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#bottomButtonRow &gt; input[name=&quot;delID&quot;]</td>
+	<td> Save </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars.looptimes++;}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
